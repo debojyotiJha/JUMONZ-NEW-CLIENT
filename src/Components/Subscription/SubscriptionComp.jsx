@@ -5,6 +5,7 @@ import Lottie from "lottie-react";
 import gsap from "gsap";
 import subscription from "../../Loaders/subscription.json";
 import bgpaid from '../../assets/bgpaid.png';
+import Group from '../../assets/Group 57.png';
 import { IoMdSend } from "react-icons/io";
 
 function SubscriptionComp() {
@@ -40,10 +41,10 @@ function SubscriptionComp() {
   }, []);
 
   return (
-    <div className="w-full flex flex-col items-center justify-center bg-[#d5e7f7] gap-20">
-      <div className="min-h-[500px] w-full max-w-[1400px] flex flex-col bg-gradient-to-b from-[#FFFFFF] via-[#D1B5FF] to-[#D1B5FF] relative rounded-lg p-4">
+    <div className="w-full flex flex-col items-center justify-center bg-black    gap-20">
+      <div className="min-h-[500px] w-full max-w-[1400px] flex flex-col bg-gradient-to-b from-[#FFFFFF] via-[#DC3E40] to-[#8C0D0F] relative rounded-lg p-4">
         <div className="w-full mt-10 flex justify-center items-center">
-          <div className="bg-[#ffffff] font-[700] flex gap-6 sm:gap-12 justify-center items-center h-full w-full max-w-[800px] rounded-full shadow-lg p-2">
+          <div className="bg-gradient-to-r from-[#FB888A] to-[#FFFFFF] font-[700] flex gap-6 sm:gap-12 justify-center items-center h-full w-full max-w-[800px] rounded-full shadow-lg p-2">
             <div
               className={`${isActive("/home")} cursor-pointer`}
               onClick={() => navigate("/home")}
@@ -56,7 +57,7 @@ function SubscriptionComp() {
             >
               Discover
             </div>
-            <div className="bg-[#2196f3] cursor-pointer p-2 rounded-full text-[1.5rem] sm:text-[2rem] text-[#fff]">
+            <div className="bg-[#D91515] cursor-pointer p-2 rounded-full text-[1.5rem] sm:text-[2rem] text-[#fff]">
               <FaPlus />
             </div>
             <div
@@ -101,7 +102,7 @@ function SubscriptionComp() {
         </div>
 
         <div
-          className="flex text-[1.5rem] sm:text-[2.3rem] mb-12 font-[700] justify-center mt-12 bg-[#2196f3] w-[60%] sm:w-[20%] p-2 rounded-full self-center cursor-pointer text-[#fff]"
+          className="flex text-[1.5rem] sm:text-[2.3rem] mb-12 font-[700] justify-center mt-12 bg-black w-[60%] sm:w-[20%] p-2 rounded-full self-center cursor-pointer text-[#fff]"
           onClick={scrollToPlanSection}
         >
           View Plans
@@ -113,7 +114,7 @@ function SubscriptionComp() {
         className="w-full justify-center items-center flex flex-col relative mb-[50px]"
       >
         <div className="flex w-[70%] justify-between mb-10 relative z-[100]">
-          <div className="w-[490px] h-[600px] rounded-lg bg-[#fff] p-8 gap-4 flex flex-col justify-center font-[600]">
+          <div className="w-[490px] h-[600px] rounded-lg bg-gradient-to-br from-[#FB888A] to-[#FFFFFF] p-8 gap-4 flex flex-col justify-center font-[600]">
             <h1 className="text-[2rem] text-center font-[600]">
               Explore Our Free Plan Benefits
             </h1>
@@ -126,12 +127,12 @@ function SubscriptionComp() {
             <li>Access to basic support (email or FAQ)</li>
             <li>Follow other users and view their posts</li>
             <div className="w-full h-[40px] flex justify-center items-center self-center">
-              <div className="h-full flex justify-center align-middle items-center p-4 pl-8 pr-8 bg-gradient-to-r from-[#E6D7FF] to-[#D3B8FF] font-[300] rounded-md mt-10 mb-10 text-[1.3rem]">
+              <div className="h-full flex justify-center align-middle font-semibold items-center p-4 pl-8 pr-8 bg-gradient-to-r from-[#FFFFFF] via-[#DC3E40] to-[#8C0D0F] font-[300] rounded-full mt-10 mb-10 text-[1.3rem]">
                 Continue with Free
               </div>
             </div>
           </div>
-          <div className="w-[490px] h-[700px] rounded-lg bg-[#fff] p-8 gap-4 flex flex-col justify-center font-[600]">
+          <div className="w-[490px] h-[700px] rounded-lg bg-gradient-to-br from-[#FB888A] to-[#FFFFFF] p-8 gap-4 flex flex-col justify-center font-[600]">
             <h1 className="text-[2rem] text-center font-[600]">
               Explore Our Premium Plan Benefits
             </h1>
@@ -147,18 +148,18 @@ function SubscriptionComp() {
             <li>Collaborative posting features with other users</li>
             <li>Advanced notification settings and filters</li>
             <div className="w-full h-[40px] flex justify-center items-center self-center">
-              <div className="h-full flex text-[#333333] justify-center align-middle items-center p-4 pl-8 pr-8 bg-gradient-to-r from-[#E6D7FF] to-[#D3B8FF] font-[600] rounded-md mt-20 mb-14 text-[1.3rem]">
+              <div className="h-full flex text-[#333333] justify-center align-middle items-center p-4 pl-8 pr-8 bg-gradient-to-r  from-[#FFFFFF] via-[#DC3E40] to-[#8C0D0F] font-[600] rounded-full mt-20 mb-14 text-[1.3rem]">
                 Join Us At Just 10$
               </div>
             </div>
           </div>
         </div>
 
-        <div className="w-full flex justify-center items-center relative">
+        <div className="w-full  flex justify-center items-center relative">
           <img
-            src={bgpaid}
+            src={Group}
             alt="Subscription background"
-            className="w-full max-w-[100%]" 
+            className="w-full  max-w-[100%]" 
           />
         </div>
       </div>

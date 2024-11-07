@@ -12,9 +12,9 @@ function DashboardComp() {
     location.pathname === path ? "text-[#2196f3]" : "text-black";
 
   return (
-    <div className="w-full h-screen flex justify-center bg-[#d5e7f7]">
+    <div className="w-full h-screen flex justify-center bg-black">
         <div className="w-full mt-20 h-16 flex justify-center items-center">
-          <div className="bg-[#ffffff] font-[700] flex gap-12 justify-center items-center h-full w-[60%] rounded-full shadow-lg">
+          <div className="bg-gradient-to-r from-[#FB888A] to-[#FFFFFF] font-[700] flex gap-12 justify-center items-center h-full w-[60%] rounded-full shadow-lg">
             <div
               className={`${isActive("/home")} cursor-pointer`}
               onClick={() => navigate("/home")}
@@ -27,7 +27,7 @@ function DashboardComp() {
             >
               Discover
             </div>
-            <div className="bg-[#2196f3] cursor-pointer p-2 rounded-full text-[2rem] text-[#fff]"
+            <div className="bg-[#D91515] cursor-pointer p-2 rounded-full text-[2rem] text-[#fff]"
             onClick={()=>{
               navigate('/addpost')
             }}

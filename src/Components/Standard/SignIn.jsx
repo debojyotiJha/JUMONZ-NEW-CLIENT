@@ -21,7 +21,7 @@ const LoginComponent = () => {
           <input
             type="email"
             id="email"
-            className="mt-1 block px-2 py-3 mb-9 w-full h-[50px] bg-[#FFA4A6] border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block px-5 py-3 mb-9 w-full h-[50px] bg-[#FFA4A6]  border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Enter your email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
@@ -33,7 +33,7 @@ const LoginComponent = () => {
           <input
             type="password"
             id="password"
-            className="mt-1 block w-full px-3 py-2 h-[50px] mb-9 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-full px-5 py-2 h-[50px] mb-9 bg-[#FFA4A6]  border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Enter your password"
             value={password}
             onChange={(e) => setPassword(e.target.value)}
@@ -45,7 +45,7 @@ const LoginComponent = () => {
           <input
             type="text"
             id="captcha"
-            className="mt-1 block w-1/2 px-3 py-2 h-[50px] mb-9 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
+            className="mt-1 block w-1/2 px-3 py-2 h-[50px] mb-9 bg-[#FFA4A6] border-gray-300 rounded-full shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500"
             placeholder="Enter captcha"
             value={captcha}
             onChange={(e) => setCaptcha(e.target.value)}
@@ -65,7 +65,7 @@ const LoginComponent = () => {
           <div>
           <button
             type="submit"
-            className="w-44 flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+            className="w-44 flex justify-center py-2 px-4 border border-transparent rounded-full shadow-sm text-sm font-medium text-white bg-black hover:bg-slate-800  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
             Log in
           </button>
         </div>

@@ -17,9 +17,9 @@ function AddPostComp() {
 
   return (
     <div className="mb-10">
-      <div className="w-full h-[250px] flex justify-center bg-[#fff]">
+      <div className="w-full h-[250px] flex justify-center  ">
         <div className="w-full mt-20 h-16 flex justify-center items-center">
-          <div className="bg-gradient-to-r from-[#E6D7FF] to-[#D3B8FF] font-[700] flex gap-4 md:gap-12 justify-center items-center h-full w-[90%] md:w-[60%] rounded-full shadow-lg">
+          <div className="bg-gradient-to-r from-[#FB888A] to-[#FFFFFF] font-[700] flex gap-4 md:gap-12 justify-center items-center h-full w-[90%] md:w-[60%] rounded-full shadow-lg">
             <div
               className={`${isActive("/home")} cursor-pointer text-sm md:text-base`}
               onClick={() => navigate("/home")}
@@ -33,7 +33,7 @@ function AddPostComp() {
               Discover
             </div>
             <div
-              className="bg-[#2196f3] cursor-pointer p-2 rounded-full text-[1.5rem] md:text-[2rem] text-[#fff]"
+              className="bg-red-800 cursor-pointer p-2 rounded-full text-[1.5rem] md:text-[2rem] text-[#fff]"
               onClick={() => navigate("/addpost")}
             >
               <FaPlus />
@@ -63,10 +63,10 @@ function AddPostComp() {
         </div>
       </div>
 
-      <div className="px-4 md:px-10">
+      <div className="px-4 md:px-10 ">
         <div className="username-row flex items-center justify-between">
           <div className="flex gap-5">
-            <div className="w-[50px] h-[50px] rounded-full bg-[#000] ml-10"></div>
+            <div className="w-[50px] h-[50px] rounded-full bg-red-800  ml-10"></div>
             <div>
               <div className="font-[700] text-[17px]">User_Name</div>
               <div className="text-[12px]">9th March, 10:28PM</div>
@@ -78,7 +78,7 @@ function AddPostComp() {
         </div>
 
         <div className="photo-gallery flex justify-center items-center my-2">
-          <div className="w-full md:w-[95%] h-[300px] rounded-[10px] bg-[#000]"></div>
+          <div className="w-full md:w-[95%] h-[300px] rounded-[10px] bg-gradient-to-r from-[#FB888A] to-[#FFFFFF]"></div>
         </div>
 
         <div className="tags w-full pl-11 pr-11">
@@ -91,6 +91,22 @@ function AddPostComp() {
               <RxCross1 className="text-[12px] text-[#fff] mr-2" />
               <span className="text-[#fff] font-[700]">user_2</span>
             </div>
+            <div className=" px-5 mt-5 rounded-xl bg-[#000]  p-2 flex items-center justify-center">
+              <span className="text-[#fff] text-xl font-[700]">Add</span>
+            </div>
+          </div>
+        </div>
+
+        {/* Title input section */}
+        <div className="w-full px-8 flex justify-left mt-10">
+          <div className="w-[90%] md:w-[60%]">
+            <label htmlFor="title" className="text-[1.5rem] font-[700]">Title</label>
+            <input
+              type="text"
+              id="title"
+              placeholder="Enter title"
+              className="w-full bg-white border-[#000] text-white rounded-full p-3 mt-2 focus:outline-1 focus:ring-2 focus:ring-gray-600"
+            />
           </div>
         </div>
 
@@ -147,12 +163,15 @@ function AddPostComp() {
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="w-full flex justify-center mt-10">
-        <button className="text-[2rem] font-[500] bg-[#000] text-[#fff] py-1 px-28 rounded-[15px]">
-          Post
-        </button>
+        
+
+        {/* Post button section */}
+        <div className="w-full flex justify-center mt-10">
+          <button className="text-[2rem] font-[500] bg-[#000] text-[#fff] py-1 px-28 rounded-[15px]">
+            Post
+          </button>
+        </div>
       </div>
     </div>
   );
